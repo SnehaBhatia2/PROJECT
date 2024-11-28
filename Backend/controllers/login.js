@@ -22,7 +22,7 @@ exports.login = async (req, res) => {
       });
     }
 
-    const payLoad = {
+    const payLoad = {    //used to generate a JWT token
       email: existedUser.email,
       role: existedUser.role,
       id: existedUser._id,

@@ -7,7 +7,7 @@ const ShowDoctors = async (req, res) => {
     const doctorUsers = await User.find({ role: /doctor/i }); // 
 
   
-    res.json(doctorUsers);
+    res.json(doctorUsers);     //list of doctor users back to the client.
   } catch (error) {
    
     console.error("Error fetching doctors:", error);
@@ -18,3 +18,5 @@ const ShowDoctors = async (req, res) => {
 module.exports = {
   ShowDoctors, // 
 };
+
+//, routes refer to the pathways through which the server handles incoming HTTP requests and sends appropriate responses

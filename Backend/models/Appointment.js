@@ -24,3 +24,5 @@ const appointmentSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("Appointment", appointmentSchema);
+
+//models file is used to define and manage how data is represented, stored, and retrieved from the MongoDB database.

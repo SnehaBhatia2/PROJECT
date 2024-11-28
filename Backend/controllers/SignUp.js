@@ -33,7 +33,8 @@ exports.signup = async (req, res) => {
       });
     }
 
-    let encryptedPassword;
+    let encryptedPassword;  //let is block-scoped
+    //meaning it is only accessible within the block (enclosed by {}) where it was defined.
 
     try {
       encryptedPassword = await bcrypt.hash(Password, 10);
